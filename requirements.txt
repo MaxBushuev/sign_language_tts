@@ -1,0 +1,15 @@
+transformers
+torch
+torchvision
+peft
+datasets
+pillow
+huggingface-hub
+accelerate
+decord
+trl
+num2word
+streamlit
+gTTS
+pyav
+python-dotenv
