@@ -1,6 +1,7 @@
 import torch
 from transformers import AutoProcessor, AutoModelForImageTextToText
 import streamlit as st
+import os
 
 @st.cache_resource
 def load_model_and_processor(model_path, adapter_path):
@@ -10,7 +11,8 @@ def load_model_and_processor(model_path, adapter_path):
         torch_dtype=torch.bfloat16,
         device_map = "auto"
     )
-    # model.load_adapter(adapter_path)
+    print("adapter_path", os.path.abspath(adapter_path))
+    model.load_adapter(os.path.abspath(adapter_path))
     return processor, model
 
 class ModelHandler:

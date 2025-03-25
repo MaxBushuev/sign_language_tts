@@ -1,3 +1,3 @@
 MODEL_PATH = "HuggingFaceTB/SmolVLM2-500M-Video-Instruct"
-ADAPTER_PATH = "models/checkpoint-500"
+ADAPTER_PATH = "checkpoints/1_iter"
 STATIC_FOLDER = "static"
