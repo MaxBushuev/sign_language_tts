@@ -5,7 +5,7 @@ from modules.text_to_speech import TextToSpeech
 from config import MODEL_PATH, ADAPTER_PATH, STATIC_FOLDER
 
 import streamlit as st
-
+st.set_page_config(layout="wide")  # Set the layout to wide mode
 # Project Description
 st.title("ASL to English Speech Converter")
 st.markdown("""
@@ -31,7 +31,7 @@ Please use the sidebar to upload your ASL video file and see the magic unfold!
 """)
 
 # Streamlit App Layout
-st.set_page_config(layout="wide")  # Set the layout to wide mode
+
 
 st.sidebar.title("Upload Media")
 st.sidebar.write("Upload a video or image for processing")
