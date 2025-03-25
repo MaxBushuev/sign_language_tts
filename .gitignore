@@ -1,0 +1,11 @@
+
+train/data
+wandb
+.env
+
+realigned_train.csv
+
+models--HuggingFaceTB--SmolVLM2-500M-Video-Instruct
+outputs
+
+**__pycache__**
