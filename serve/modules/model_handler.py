@@ -10,7 +10,7 @@ def load_model_and_processor(model_path, adapter_path):
         torch_dtype=torch.bfloat16,
         device_map = "auto"
     )
-    model.load_adapter(adapter_path)
+    # model.load_adapter(adapter_path)
     return processor, model
 
 class ModelHandler:

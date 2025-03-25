@@ -21,8 +21,13 @@ class MediaProcessor:
             f.write(uploaded_file.getbuffer())
         return file_path, file_type
 
-    def get_media_path_and_type(self):
-        """Determine the media type and path."""
+    def get_media_path_and_type(self, video_path=None):
+        """Determine the media type and path.
+        If video_path is provided, return that path instead of default.
+        """
+        if video_path:
+            return video_path, "video"
+        
         video_path = os.path.join(self.static_folder, "current_media.mp4")
         image_path = os.path.join(self.static_folder, "current_media.jpg")
         
